@@ -11,7 +11,7 @@ export const initiateApp = (app, express) => {
     const port = process.env.port;
 
     app.use(express.json());
-
+    app.use("/auth",routers.authRouter)
     app.use("/user", routers.userRouter);
     app.use("/category", routers.categoryRouter);
     app.use("/task", routers.taskRouter);
