@@ -1,7 +1,8 @@
 import { Router } from "express";
 import * as UA from "./auth.js";
 import { validation } from "../../Middlewares/validation.js";
-import * as UV from "../users/user.validation.js";
+import * as UV from "./auth.validation.js";
+
 
 
 const router = Router()
